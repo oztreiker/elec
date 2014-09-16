@@ -76,21 +76,22 @@ body{
 	margin: 1px;
 	width: 100%;
 	text-align: left;
-	background: rgba(255,0,0,0.3);
+	//background: rgba(255,0,0,0.3);
 	height: 30px;
 }
 .pic{
 	margin: 1px;
 	width: 100%;
 	text-align: left;
-	background: rgba(255,0,0,0.3);
+	//background: rgba(255,0,0,0.3);
 	height: 110px;
 }
 .detailer{
 	margin: 1px;
+	padding: 10px;
 	width: 100%;
 	text-align: left;
-	background: rgba(255,0,0,0.3);
+	//background: rgba(255,0,0,0.3);
 	height: 110px;
 }
 /**
@@ -105,15 +106,19 @@ body{
 	display: inline-block;
 	border-radius: 150px; 
 	-webkit-border-radius: 150px; 
-	-moz-border-radius: 150px; 
+	-moz-border-radius: 150px;
 	background: url("../img/img8.png") no-repeat;
 	background-position: center;
-} 
+}
+
 .circular img{ 
 	opacity: 0;
 	filter: alpha(opacity=0);
 }
-
+.circular:hover{
+	-webkit-transition:1.5s;
+	-webkit-transform:rotate(360deg);
+}
 .circular_shadow{
 	width: 300px;
 	height: 300px;
@@ -124,6 +129,33 @@ body{
 	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+/*
+	Efecto fade text in
+	muestr el texto cuando el mouse esta sobre la imagen
+*/
+#ex3 {
+    width: 730px;
+    height: 133px;
+    line-height: 0px;
+    color: transparent;
+    font-size: 50px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+       font-weight: 300;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+  
+#ex3:hover {
+    line-height: 133px;
+    color: #575858;
+}
+  
+#ex3 img{
+    float: left;
+    margin: 0 15px;
 }
 
 /*OTROS BOTONES SOCIALES*/
