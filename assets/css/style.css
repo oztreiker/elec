@@ -31,8 +31,8 @@ body{
 }
 .box{
 	text-align: left;
-	//float: right;
-	position: fixed;
+	float: left;
+	//position: fixed;
 	padding: 1px;
 	width: 8%;
 	height: 60px;
@@ -41,7 +41,19 @@ body{
 	border: 2px solid #ffffff;
 	border-radius: 3px;	
 }
-.main{
+.after-box {
+	text-align: left;
+  	clear: left;
+	position: left;//Es para que la etiqueta section baja despues de div.box
+	padding: 5px;
+	width: 100%;
+	height: 400px;
+	background: rgba(0,0,0,0.7);
+	background-attachment: fixed;
+	border: 2px solid #ffffff;
+	border-radius: 3px;
+}
+.principal{
 	text-align: left;
 	padding: 3px;
 	height: 450px;

@@ -1,27 +1,45 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html ng-app='angularRoutingApp'>
+<head >
 	<meta charset="utf-8">
 	<title>mi titulo</title>
 	<link rel="stylesheet" href="./assets/css/style.css" type="text/css"/>
 	<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap-3.1.1/css/bootstrap.min.css">
+	<script type="text/javascript" src="./assets/js/mostrardiv.js"></script>
+	<script type="text/javascript" src="./assets/js/jquery-1.11.0.js"></script>
 </head>
-<body>
+<body ng-controller='mainController'>
 	<div class="header">
 		<div class="box">
 			<ul>
-			    <li type="none" ><a style="color:white;" >HOME</a></li>
+			    <li type="none" ><a href="#mision" style="color:white;" >HOME</a></li>
 			    <li type="none"><a style="color:white;">ENLACES</a></li>
 			    <li type="none"><a style="color:white;">CONTACTANOS</a></li>
 			</ul>
-		</div>
+		</div><br>	
+		<!--a href='#mision' style="color:white;">sfdasdfad</a-->
+			
 	</div>
+		<!--section id="main" class="after-box">
+		<Aqui injectamos las vistas>
+		<div ng-view><p>DONDE ESTOY</p></div>
+		</section-->
 	<div class="contenedor">
-	<div class="main">
+	<div class="principal">
+		<div class="col-md-8">
 		<p>MAIN</p>
+		<center>
+		<div id="main">
+			<!--Aqui injectamos las vistas-->
+			<div ng-view></div>
+		</div>
+		</center>
+		</div>
+		<div class="col-md-4" >
 		<div class="circular">
 			<img src="./assets/img/img8.png" alt="">
 		</div>
+		</div>		
 	</div>
 	<div class="container-fluid">
 		<div class="row">
@@ -36,9 +54,9 @@
 						</center>
 					</div>
 					<div class="detailer">
-						<a href="" title="" style="color:white; font-size: x-large; sans-serif;">Mision</a><br>
-						<a href="" title="" style="color:white; font-size: x-large; sans-serif;">Vision</a><br>
-						<a href="" title="" style="color:white; font-size: x-large; sans-serif;">Historia</a><br>
+						<a href="#mision" style="color:white; font-size: x-large; sans-serif;">Mision</a><br>
+						<a href="" style="color:white; font-size: x-large; sans-serif;">Vision</a><br>
+						<a href="" style="color:white; font-size: x-large; sans-serif;">Historia</a><br>
 					</div>
 			</div>
 			<div class="col-md-4" id="block">
@@ -66,6 +84,9 @@
 		</div>
 	</div>
 	</div>
+	<script src="./assets/js/angular.min.js"></script>
+	<script src="./assets/js/angular-route.js"></script>
+	<script src="./assets/js/main.js"></script>
 </body>
 <!--div class="footer">
 <h style="color:white;">mis pies</h>
