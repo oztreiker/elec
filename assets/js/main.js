@@ -12,6 +12,10 @@ angularRoutingApp.config(function ($routeProvider) {
 			templateUrl: 'view/mision.html',
 			controller: 'misionController'
 		})
+		.when('/contacto', {
+			templateUrl: 'view/contacto.html',
+			controller: 'contactController'
+		})
 		.otherwise({ 
 			redirectTo: '/' 
 		});
